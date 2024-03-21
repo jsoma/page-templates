@@ -65,8 +65,19 @@ video {
 }
 
 .step p {
+    text-align: left;
+}
+
+.step p:last-child {
+    padding: 0;
+}
+
+.step > * {
+    width: 700px;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
     text-align: center;
-    padding: 1rem;
+    padding: 1.2em !important;
     background-color: #ffa880cc;
 }
 
