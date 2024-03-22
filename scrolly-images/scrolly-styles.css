@@ -7,6 +7,7 @@
     position: sticky;
     top: 0;
     transform: translate(0px, 0px);
+    opacity: 0.5;
     z-index: 0;
     height: 100svh;
     width: 100vw;
@@ -48,6 +49,7 @@ video {
 }
 
 .steps-container {
+    transform: translate3d(0,0,0);
     position: relative;
     padding: 0;
     z-index: 10;
@@ -62,6 +64,7 @@ video {
     align-items: center;
     justify-content: center;
     margin-bottom: 50svh;
+    transform: translate(0px, 0px);
 }
 
 .step p {
