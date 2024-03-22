@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     transform: translate(0px, 0px);
-    z-index: 1;
+    z-index: 0;
     height: 100svh;
     width: 100vw;
     margin: 0;
