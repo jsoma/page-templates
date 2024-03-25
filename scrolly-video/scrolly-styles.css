@@ -33,7 +33,7 @@
     z-index: -1;
 }
 
-video {
+.scrolly-container video {
     position: absolute;
     top: 0;
     height: auto;
