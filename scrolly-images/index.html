@@ -230,23 +230,23 @@
     /*
     This part sets up your actions. In this case, it's changing the image in the scrolly container.
     */
-    document.querySelector("#step1").addEventListener('stepin', (e) => {
+    d3.select("#step1").on('stepin', (e) => {
       d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image1.jpg")
     })
 
-    document.querySelector("#step2").addEventListener('stepin', (e) => {
+    d3.select("#step2").on('stepin', (e) => {
       d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image2.jpg")
     })
 
-    document.querySelector("#step3").addEventListener('stepin', (e) => {
+    d3.select("#step3").on('stepin', (e) => {
       d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image1.jpg")
     })
 
-    document.querySelector("#step4").addEventListener('stepin', (e) => {
+    d3.select("#step4").on('stepin', (e) => {
       d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image2.jpg")
     })
 
-    document.querySelector("#step5").addEventListener('stepin', (e) => {
+    d3.select("#step5").on('stepin', (e) => {
       d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "image1.jpg")
     })
   </script>
