@@ -1409,15 +1409,19 @@
                 when you use it, and don't forget to change the <code>title</code> tag!!!</p>
         </div>
     </div>
-
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
     <script>
 
         function hideNote() {
             // annotation: #path-1, #text-1, #path-2, #text-2
-            d3.select("#path-1").style('visibility', 'hidden')
-            d3.select("#text-1").style('visibility', 'hidden')
-            d3.select("#path-2").style('visibility', 'hidden')
-            d3.select("#text-2").style('visibility', 'hidden')
+            d3.select("#path-1").classed('hidden', true)
+            d3.select("#text-1").classed('hidden', true)
+            d3.select("#path-2").classed('hidden', true)
+            d3.select("#text-2").classed('hidden', true)
         }
 
         /* Scrollytelling code goes under here */
@@ -1436,10 +1440,10 @@
             d3.selectAll("[data-name='africa'] path").style('stroke', 'none')
 
             // do changes for step one
-            d3.select("#path-1").style('visibility', 'visible')
-            d3.select("#text-1").style('visibility', 'visible')
-            d3.select("#path-2").style('visibility', 'visible')
-            d3.select("#text-2").style('visibility', 'visible')
+            d3.select("#path-1").classed('hidden', false)
+            d3.select("#text-1").classed('hidden', false)
+            d3.select("#path-2").classed('hidden', false)
+            d3.select("#text-2").classed('hidden', false)
         })
 
         d3.select("#step-two").on('stepin', function (e) {
